@@ -1,11 +1,51 @@
+<!-- Food Ordering Website HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Food Ordering Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <a href="#" id="logo">FoodStop</a>
+            <button class="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <div class="content-wrapper container">
+        <main>
+            <h1>Menu</h1>
+            <section id="food-items-container">
+                <!-- Food items will be dynamically loaded here -->
+                <p>Loading food items...</p>
+            </section>
+        </main>
+        <aside>
+        <h2>Your Order</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically loaded here -->
+            <li>No items in cart</li>
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button>Checkout</button>
+    </aside>
+    <footer>
+        <p>&copy; 2023 Food Ordering Website</p>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
